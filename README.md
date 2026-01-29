@@ -2,7 +2,7 @@
 Official repository containing our mouse face detector used in the paper **"Automatic pain face analysis in mice: Applied to a varied dataset with non-standardized conditions"** (not yet published).
 
 ## Overview
-This repository provides a pipeline to transform raw mouse behavior videos into high-quality image files ready for **Mouse Grimace Scale (MGS)** rating. The core logic is contained in `extract_MGS_frames.py`, which automates frame selection to minimize manual labor and human bias.
+This repository provides a pipeline to transform raw mouse behavior videos into high-quality face image crops ready for **Mouse Grimace Scale (MGS)** rating.
 
 ## Processing Pipeline
 The script `extract_MGS_frames.py` processes videos through the following stages:
@@ -34,6 +34,7 @@ Requires a trained DeepLabCut model tracking these five mouse facial features:
 * 'ear_l'
 * 'eye_r'
 * 'ear_r'
+
 For information on DeepLabCut see <https://www.mackenziemathislab.org/deeplabcut>.
 
 ### Example call
