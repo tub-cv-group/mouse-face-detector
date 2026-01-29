@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ```
 
 ### Other requirements
-Requires a trained DeepLabCut model tracking these five mouse facial features:
+Requires a trained DeepLabCut model tracking these five mouse facial features ('_l' and '_r' for left and right from the mouse's point of view):
 * 'nose'
 * 'eye_l'
 * 'ear_l'
