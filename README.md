@@ -10,7 +10,7 @@ The script `extract_MGS_frames.py` processes videos through the following stages
 1. **Facial Feature Detection**: Uses the **DeepLabCut (DLC) API** to identify and track key facial landmarks.
 2. **Heuristic Frame Extraction**: The script selects "rateable" frames based on:
     * **Feature Visibility**: Priority is given to frames where the maximum number of facial features are detected with high confidence.
-    * **Blur Filtering**: Implementation of a variance of Laplacian method to ensure image sharpness.
+    * **Blur Filtering**: Implementation of a variance of Laplacian method as well as Fast Fourier Transform to ensure image sharpness.
     * **Temporal Diversity**: Ensures selected frames are not too close in time to avoid redundant data points.
 
 ---
